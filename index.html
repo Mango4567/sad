@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utkarsh | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Utkarsh's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hello! I'm Utkarsh, a passionate coder with experience in various programming languages and technologies. I love solving problems and building efficient solutions through code.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML & CSS</h3>
+                <p>Experienced in building responsive and accessible web pages.</p>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Proficient in building interactive web applications.</p>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Experience in data analysis, automation, and backend development.</p>
+            </div>
+            <div class="skill">
+                <h3>Java</h3>
+                <p>Strong foundation in object-oriented programming and software development.</p>
+            </div>
+            <div class="skill">
+                <h3>C++</h3>
+                <p>Good understanding of algorithms, data structures, and competitive programming.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via email at <a href="mailto:utkarsh@example.com">utkarsh@example.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Utkarsh's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<style>/* General Styles */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1.6;
+        background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+        color: #333;
+    }
+    
+    /* Header Styles */
+    header {
+        background: linear-gradient(45deg, #3a6186, #89253e);
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    nav ul li {
+        margin: 0 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1rem;
+        padding: 8px 16px;
+        border-radius: 20px;
+        transition: background 0.3s;
+    }
+    
+    nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+    
+    /* Section Styles */
+    .section {
+        padding: 3rem 2rem;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.9);
+        margin: 2rem 1rem;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .section h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: #444;
+        position: relative;
+    }
+    
+    .section h2::after {
+        content: '';
+        width: 60px;
+        height: 3px;
+        background: #ff6347;
+        display: block;
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+    
+    .section p {
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.8;
+        color: #555;
+    }
+    
+    /* Skills Section */
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+    
+    .skill {
+        background: linear-gradient(145deg, #8e9eab, #eef2f3);
+        padding: 1.5rem;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .skill h3 {
+        margin-top: 0;
+        color: #333;
+        font-size: 1.6rem;
+    }
+    
+    .skill p {
+        font-size: 1.1rem;
+        color: #666;
+    }
+    
+    .skill:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Contact Section */
+    #contact a {
+        color: #444;
+        text-decoration: none;
+        font-weight: bold;
+        background: linear-gradient(45deg, #ff9966, #ff5e62);
+        padding: 10px 20px;
+        border-radius: 20px;
+        transition: background 0.3s, transform 0.3s;
+    }
+    
+    #contact a:hover {
+        background: linear-gradient(45deg, #ff5e62, #ff9966);
+        transform: scale(1.05);
+    }
+    
+    /* Footer Styles */
+    footer {
+        background: linear-gradient(45deg, #3a6186, #89253e);
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+    
+    footer p {
+        margin: 0;
+        font-size: 1rem;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+        }
+    
+        nav ul li {
+            margin: 10px 0;
+        }
+    }
+    </style>
